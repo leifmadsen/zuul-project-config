@@ -6,5 +6,3 @@
           - leifmadsen/zuul-project-config
         untrusted-projects:
           - openstack-infra/zuul-jobs
-            shadow:
-              leifmadsen/zuul-project-config

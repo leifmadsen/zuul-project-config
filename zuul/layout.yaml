@@ -1,0 +1,22 @@
+- pipeline:
+    name: check
+    manager: independent
+    trigger:
+      github:
+        - event: pull_request
+    start:
+      github:
+        comment: Starting job
+    success:
+      github:
+        comment: It worked
+
+- job:
+    name: check-syntax
+    nodes: current-release
+
+- project:
+    name: testing
+    check:
+       jobs:
+         - check-syntax
