@@ -1,0 +1,10 @@
+- tenant:
+    name: zuul-testing
+    source:
+      github:
+        config-projects:
+          - leifmadsen/zuul-project-config
+        untrusted-projects:
+          - openstack-infra/zuul-jobs
+            shadow:
+              leifmadsen/zuul-project-config
