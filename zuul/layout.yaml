@@ -16,7 +16,7 @@
     nodes: current-release
 
 - project:
-    name: testing
+    name: leifmadsen/zuul-testing
     check:
        jobs:
          - check-syntax
